@@ -3,7 +3,7 @@
 /* eslint-disable max-lines */
 // @ts-nocheck
 import { CustomThemeProvider } from "@meesho/mesh-ui";
-import { Carousel } from "@meesho/mesh-ui/dist/components/Carousel";
+import { Card } from "@meesho/mesh-ui/dist/components/Card";
 import React from "react";
 
 const responsive = [
@@ -28,11 +28,7 @@ const WithMesh = (props: { widgets: any[] }) => {
 
   return (
     <CustomThemeProvider theme={{ isMobile: isPhone }}>
-      <Carousel {...slidProps(true)} autoSlide>
-        {props?.widgets?.map((widget, idx) => (
-          <h1>test</h1>
-        ))}
-      </Carousel>
+      <Card>Test</Card>
     </CustomThemeProvider>
   );
 };

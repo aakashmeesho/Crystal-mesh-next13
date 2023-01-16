@@ -1,25 +1,10 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable max-lines */
 // @ts-nocheck
-import { Carousel } from "@meesho/crystal/Carousel";
+import { Card } from "@meesho/crystal/Card";
 import React from "react";
 
-const WithCrystal = (props: { widgets: any[] }) => (
-  <Carousel
-    afterChange={function noRefCheck() {}}
-    autoplaySpeed={1000}
-    beforeChange={function noRefCheck() {}}
-    centerMode
-    centerPadding="21px"
-    infinite
-    scale
-    slidesToShow={1}
-  >
-    {props?.widgets?.map((widget, idx) => (
-      <h1>data</h1>
-    ))}
-  </Carousel>
-);
+const WithCrystal = (props: { widgets: any[] }) => <Card>Test</Card>;
 
 export async function getServerSideProps(context) {
   return {
